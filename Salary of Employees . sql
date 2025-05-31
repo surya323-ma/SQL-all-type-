@@ -1,0 +1,29 @@
+Salary of Employees
+Task
+Create a query to retrieve the employee_name, company, and salary for employees in the full-time category, ordered by salary in descending order
+
+Table name: Employees
+
+employee_id	employee_name	company	category	department	salary
+1	John Smith	TechCorp	Full-Time	Engineering	80000
+2	Alice Johnson	TechCorp	Part-Time	HR	30000
+3	Bob Brown	FinServ	Full-Time	Finance	90000
+4	Carol White	HealthPlus	Contract	IT	75000
+5	David Green	TechCorp	Full-Time	Engineering	85000
+6	Emma Blue	FinServ	Part-Time	Finance	32000
+7	Frank Black	HealthPlus	Full-Time	HR	60000
+8	Grace Grey	TechCorp	Full-Time	Marketing	70000
+9	Henry Red	FinServ	Contract	IT	95000
+10	Ivy Yellow	HealthPlus	Part-Time	Marketing	28000
+--your code goes here
+SELECT employee_name, company, salary FROM Employees WHERE category = 'Full-Time' ORDER BY salary DESC;
+Your Output
+┌───────────────┬────────────┬────────┐
+│ employee_name │  company   │ salary │
+├───────────────┼────────────┼────────┤
+│ Bob Brown     │ FinServ    │ 90000  │
+│ David Green   │ TechCorp   │ 85000  │
+│ John Smith    │ TechCorp   │ 80000  │
+│ Grace Grey    │ TechCorp   │ 70000  │
+│ Frank Black   │ HealthPlus │ 60000  │
+└───────────────┴────────────┴────────┘
