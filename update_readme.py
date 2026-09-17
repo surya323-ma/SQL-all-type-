@@ -1,21 +1,24 @@
 #!/usr/bin/env python3
 """
 update_readme.py
-Counts solution files (SQL, Python, Java) in this repo and rewrites
-the Stats table in README.md between STATS-START / STATS-END markers.
+Counts solution files in this repo and rewrites the Stats table in
+README.md between STATS-START / STATS-END markers.
+Timestamp shown in India Standard Time (IST).
 """
 
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 README_PATH = "README.md"
 SCRIPT_NAME = os.path.basename(__file__)
 
-SOLUTION_EXTENSIONS = {".sql": "SQL", ".py": "Python", ".java": "Java"}
+SOLUTION_EXTENSIONS = {".sql": "SQL"}
 IGNORED_DIRS = {".git", ".github", "__pycache__", "venv", ".venv", "node_modules"}
 
 START_MARKER = "<!-- STATS-START -->"
 END_MARKER = "<!-- STATS-END -->"
+
+IST = timezone(timedelta(hours=5, minutes=30))
 
 
 def count_solutions(root="."):
@@ -33,7 +36,7 @@ def count_solutions(root="."):
 
 def build_stats_block(counts):
     total = sum(counts.values())
-    timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    timestamp = datetime.now(IST).strftime("%Y-%m-%d %H:%M IST")
     lines = [START_MARKER, "| Metric | Count |", "|---|---|"]
     lines.append(f"| Total solutions | {total} |")
     for lang, count in counts.items():
