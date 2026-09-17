@@ -19,9 +19,9 @@ Each solution lives in its own file, named after the problem number and title, f
 | Total solutions | 36 |
 | SQL solutions | 34 |
 | Python solutions | 2 |
+| Java solutions | 0 |
 
-
-_Last updated: 2026-09-17 05:26 UTC_
+_Last updated: 2026-09-17 05:28 UTC_
 <!-- STATS-END -->
 
 > These numbers are generated automatically — see [Auto-updating stats](#-auto-updating-stats) below.
