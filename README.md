@@ -9,6 +9,7 @@ Each solution lives in its own file, named after the problem number and title, f
 - `176. Second Highest Salary.sql`
 - `1934. Confirmation Rate.sql`
 - `3673. Find Zombie Sessions`
+- `3832. Find Users with Persistent Behavior Patterns`
 
 **Language used:** SQL
 
