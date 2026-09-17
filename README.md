@@ -18,10 +18,10 @@ Each solution lives in its own file, named after the problem number and title, f
 <!-- STATS-START -->
 | Metric | Count |
 |---|---|
-| Total solutions | 37 |
-| SQL solutions | 37 |
+| Total solutions | 38 |
+| SQL solutions | 38 |
 
-_Last updated: 2026-09-17 13:21 IST_
+_Last updated: 2026-09-18 00:22 IST_
 <!-- STATS-END -->
 
 > These numbers are generated automatically — see [Auto-updating stats](#-auto-updating-stats) below.
